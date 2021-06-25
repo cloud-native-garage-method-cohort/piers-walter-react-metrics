@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/instance: app-instance
     app.kubernetes.io/name: app-name
     app.openshift.io/runtime: js
-  name: example-express-app
+  name: piers-walter-react-metrics-prod
 spec:
   progressDeadlineSeconds: 600
   replicas: 1

@@ -9,7 +9,7 @@ COPY . ./
 RUN npm run build
 
 # production environment
-FROM nginx:stable-alpine
+FROM registry.access.redhat.com/ubi8/nginx-118
 COPY --from=build /app/build /usr/share/nginx/html
 COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 8080
