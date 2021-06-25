@@ -34,14 +34,14 @@ spec:
             failureThreshold: 3
             httpGet:
               path: /
-              port: 3000
+              port: 8080
               scheme: HTTP
             periodSeconds: 10
             successThreshold: 1
             timeoutSeconds: 1
           name: express-sample-app
           ports:
-            - containerPort: 3000
+            - containerPort: 8080
               name: http
               protocol: TCP
           readinessProbe:
